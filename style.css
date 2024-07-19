@@ -5,6 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /*or just use this only - depends*/
+    scroll-behavior: smooth; /*add this to allow you to smoothly scroll towards your href link*/
 }
 
 /* SIDEBAR */
@@ -54,10 +55,6 @@ ul > li.nav-item.dropdown > ul > li > a:active {
         }
 }
 
-/* #offcanvasNavbar2 > div.offcanvas-body.fs-5 > ul > li.nav-item.dropdown > ul */
-
-
-
 /* SECTION 1*/
 /* NOTE: Mas useful ang ID kapag sa one-page website */
 
@@ -66,7 +63,7 @@ ul > li.nav-item.dropdown > ul > li > a:active {
     background: #000 url('./assets/Cover Photo.png') 0 0;
     height: 100vh;
     background-repeat: no-repeat;
-    background-position: 75% 90%;
+    background-position: 75% 100%;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -78,7 +75,7 @@ ul > li.nav-item.dropdown > ul > li > a:active {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 85vh;
+    height: 93vh;
 }
 
 body > nav > div > a {
@@ -95,11 +92,6 @@ body > nav > div > a {
     border-radius: 20px;
 }
 
-@media (max-width: 900px) {
-    .title-page {
-        height: 100vh;
-    }
-}
 
 @media (max-width: 400px) {
     h1, p {
@@ -111,20 +103,12 @@ body > nav > div > a {
         width: 20px;
         height: 20px;
     }
-
-    .title-page {
-        height: 110vh;
-    }
     
 }
 
 @media (max-width: 250px) {
     #home > div > div > div > a > svg {
         display: none;
-    }
-
-    .title-page {
-        height: 85vh;
     }
 }
 
