@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - John Benedict Tugano</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- My Own Logo -->
+    <link rel="icon" type="image/png" href="assets/Logo - JBT.png"/>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- MONTSERRAT FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Offcanvas navbar large">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">JB Tugano - Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">My Portfolio</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body fs-5">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#about">Introduction</a></li>
+                  <li><a class="dropdown-item" href="#education">Education</a></li>
+                  <li><a class="dropdown-item" href="#workExperiences">Work Experiences</a></li>
+                  <li><a class="dropdown-item" href="#extraCurriculars">Extracurriculars</a></li>
+                  <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Title -->
+     <section id="home">
+        <div class="title-page">
+            <div class="text-area">
+                <h1>John Benedict Z. Tugano</h1>
+                <p>Computer Engineer, Front-end Web Developer, Graphic Artist, Social Media Manager</p>
+                <div class="social-media">
+                    <!-- Facebook -->
+                     <a href="https://www.facebook.com/jbtugano7">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                     </a>
+                    <!-- Instagram -->
+                     <a href="https://www.instagram.com/jb_tugano">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                     </a>
+
+                    <!-- YouTube -->
+                     <a href="https://www.youtube.com/JBTuganoMusic">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                     </a>
+
+                    <!-- Twitter -->
+                     <a href="https://www.x.com/JB_Tugano">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                        </svg>
+                     </a>
+
+                    <!-- TikTok -->
+                     <a href="https://www.tiktok.com/@jb_tugano">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                        </svg>
+                     </a>
+                </div>
+            </div>
+        </div>
+        </div>
+     </section>
+
+     <!-- ABOUT - INTRODUCTION -->
+     <section id="about">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center justify-content-center g-5 py-5">
+
+          <div class="col-10 col-sm-8 col-lg-6 my-3">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/Profile Picture 1.jpg" class="d-block w-100" alt="Graduation Pic 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Profile Picture 2.jpg" class="d-block w-100" alt="Graduation Pic 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Profile Picture 3.jpg" class="d-block w-100" alt="Formal Pic 1">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hi Everyone!</h1>
+            <p class="lead">I am John Benedict Z. Tugano, a Computer Engineering graduate of Lyceum of the Philippines University - Cavite. I possess a strong foundation in technical skills and computer literacy. My passion lies in Front-End Web Development, where I strive to create user-friendly and visually appealing user interfaces (UI) that enhance user experiences (UX). 
+            </p>
+            <p class="lead">In addition to my technical background, I leverage my experience as a dedicated Social Media Manager with expertise in managing Facebook and YouTube accounts. I also possess graphic design skills, with some experience in basic video editing, consistently delivering high-quality and professional work. This unique combination of skills allows me to provide comprehensive digital solutions that meet modern web standards and user expectations.
+            </p>
+            <br>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-3">
+              <button type="button" class="btn btn-light btn-lg px-4 me-md-2" onclick="window.location.href='#education'">Education</button>
+              <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2" onclick="window.location.href='#workExperiences'">Work Experiences</button>
+              <button type="button" class="btn btn-outline-dark btn-lg px-4" onclick="window.location.href='#skills'">Skills</button>
+              
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+     </section>
+
+
+     <!-- ABOUT - EDUCATION -->
+     <section id="education">
+      <div class="container">
+        <h2>EDUCATION</h2>
+        <div id="carouselEducation" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselEducation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+              <h4>2004-17</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+                <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+              </svg>
+            </button>
+            <button type="button" data-bs-target="#carouselEducation" data-bs-slide-to="1" aria-label="Slide 2">
+              <h4>2017-19</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+                <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+              </svg>
+            </button>
+            <button type="button" data-bs-target="#carouselEducation" data-bs-slide-to="2" aria-label="Slide 3">
+              <h4>2019-24</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+                <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+              </svg>
+            </button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="experience-slide-one row h-100 align-items-center">
+                <div class="col-md-5">
+                  <div class="experience-slide-img">
+                    <img class="rounded img-fluid custom-img" src="assets/Logo - The True Vine Dynamic School.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="experience-slide-text">
+                    <h3>The True Vine Dynamic School</h3>
+                    <ul>
+                      <li>Kinder and Prep (2005-2007)</li>
+                      <li>Elementary (2006-2013)</li>
+                      <li>Junior High School (2013-2017)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="experience-slide-one row h-100 align-items-center">
+                <div class="col-md-5">
+                  <div class="experience-slide-img">
+                    <img class="rounded img-fluid custom-img" src="assets/Logo - PCU Dasma.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="experience-slide-text">
+                    <h3>Philippine Christian University - Dasmariñas</h3>
+                    <ul>
+                      <li>Senior High School (2017-2019)
+                        <ul>
+                          <li>Science, Technology, Engineering, and Mathematics (STEM)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="experience-slide-one row h-100 align-items-center">
+                <div class="col-md-5">
+                  <div class="experience-slide-img">
+                    <img class="rounded img-fluid custom-img" src="assets/Logo - LPU Cavite.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="experience-slide-text">
+                    <h3>Lyceum of the Philippines University - Cavite</h3>
+                    <ul>
+                      <li>Bachelor of Science in Computer Engineering (2019-2024)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselEducation" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselEducation" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ABOUT - WORK EXPERIENCES -->
+    <section id="workExperiences">
+    <div class="container">
+      <h2>WORK EXPERIENCES</h2>
+      <div id="workExp" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#workExp" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+            <h4>2018</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+              <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+            </svg>
+          </button>
+          <button type="button" data-bs-target="#workExp" data-bs-slide-to="1" aria-label="Slide 2">
+            <h4>2021</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+              <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+            </svg>
+          </button>
+          <button type="button" data-bs-target="#workExp" data-bs-slide-to="2" aria-label="Slide 3">
+            <h4>2023</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+              <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+            </svg>
+          </button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="experience-slide-one row h-100 align-items-center">
+              <div class="col-md-5">
+                <div class="experience-slide-img">
+                  <img class="rounded img-fluid custom-img" src="assets/Logo - CREOTEC.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="experience-slide-text">
+                  <h3>CREOTEC Philippines Inc.</h3>
+                  <ul>
+                    <li>Work Immersion Trainee (2018)
+                      <ul>
+                        <li>Assistant Supervisor</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="experience-slide-one row h-100 align-items-center">
+              <div class="col-md-5">
+                <div class="experience-slide-img">
+                  <img class="rounded img-fluid custom-img" src="assets/Logo - QA World.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="experience-slide-text">
+                  <h3>QA World</h3>
+                  <ul>
+                    <li>Audio Transcriptionist (July to August 2021)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="experience-slide-one row h-100 align-items-center">
+              <div class="col-md-5">
+                <div class="experience-slide-img">
+                  <img class="rounded img-fluid custom-img" src="assets/Logo - Harmo Tech Corp.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="experience-slide-text">
+                  <h3>Harmo Technology Corporation</h3>
+                  <ul>
+                    <li>IT Tech Support Intern (July to August 2023)
+                      <ul>
+                        <li>Network and Computer Repairs</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#workExp" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#workExp" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT - EXTRACURRICULARS -->
+  <section id="extraCurriculars">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-top g-5 py-5">
+        <div class="col-lg-6">
+          <h1 class="display-5 fs-3 fw-medium text-body-emphasis lh-1 mb-3">Extracurricular Activities</h1>
+          <hr>
+
+          <ul class="list-group justify-items-left lh-base">
+            <li>
+              <strong>Institute of Computer Engineers of the Philippines – Student Edition, LPU Cavite Computer Engineering Society (ICPEP.SE-LPUCPES)</strong>
+              <ul>
+                <li class="fw-normal fs-6 text-capitalize"><i>Administrator (A.Y. 2023-2024)</i></li>
+                <li class="fw-normal fs-6 text-capitalize"><i>President (A.Y. 2022-2023)</i></li>
+                <li class="fw-normal fs-6 text-capitalize"><i>Vice President for Internal Affairs (A.Y. 2021-2022)</i></li>
+              </ul>
+            </li>
+            <br>
+
+            <li>
+              <strong>COECSA Olympiad 2023 – College Competition (Participant)</strong>
+              <ul>
+                <li class="fw-normal fs-6 text-capitalize"><i>Team ICpEP – 1st Runner Up</i></li>
+              </ul>
+            </li>
+            <br>
+
+            <li>
+              <strong>UNBLOCK 2023 - Hackathon Competition (Participant)</strong>
+            </li>
+            <br>
+            
+            <li>
+              <strong>COECSA Schematics 2019 (LPU Cavite)</strong>
+              <ul>
+                <li class="fw-normal fs-6 text-capitalize"><i>Top 20 Finalist</i></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-6">
+          <h1 class="display-5 fs-3 fw-medium text-body-emphasis lh-1 mb-3">Seminars Attended</h1>
+          <hr>
+
+          <ul class="list-group justify-items-left lh-lg">
+              <li>The Future of CpE in the Real World - Webinar (2021)</li>
+              <li>Embedded Security System - Webinar (2022)</li>
+              <li>Thinking Small for Big Things: An AI & Microelectronics Webinar (2022)</li>
+              <li>Turning Data into Business Decisions: A Business Intelligence Webinar</li>
+              <li>ICpEP4A.SE Leadership Training and Team Building Activity 2022</li>
+              <li>Emerging Technologies in Computer Engineering: The Rise of the New and Great Possibilities (2022)</li>
+              <li>The Future Unleashed: Exploring the Convergence of AI and IoT (2023)</li>
+              <li>Artificial Intelligence: Embracing the New Era of Technology</li>
+              <li>Cybersecurity Seminar (2024) – SFTL01E</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT - SKILLS -->
+  <section id="skills">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-top g-5 py-5">
+        <div class="col-lg-6">
+          <h1>Hard Skills</h1>
+          <hr style="color: white;">
+
+          <ul class="list-group justify-items-left lh-lg text-light fs-5">
+            <li>Front-end Web Development: HTML, CSS, & ​Bootstrap 5</li>
+            <li>Basic Programming Skills: C++, VB.net, PHP, & ​JavaScript</li>
+            <li>UI/UX Design (Figma)</li>
+            <li>Basic PC and Network Troubleshooting</li>
+            <li>Social Media Management: Facebook & YouTube</li>
+            <li>Graphic Design: Photo Editing (Canva)</li>
+            <li>Video Editing (Filmora 11)</li>
+            <li>Copywriting and Transcription</li>
+            <li>Data Entry</li>
+            <li>Microsoft Office Suite: MS Word, Excel, PowerPoint</li>
+            <li>Google Docs and Google Sheets</li>
+            <li>English Proficiency - TOEIC Score of 765</li> 
+          </ul>
+        </div>
+
+
+        <div class="col-lg-6">
+          <h1>Soft Skills</h1>
+          <hr style="color: white;">
+
+          <ul class="list-group justify-items-left lh-lg text-light fs-5">
+            <li>Organizational Skills</li>
+            <li>Team Leadership</li>
+            <li>Time Management</li>
+            <li>Good Communication Skills</li>
+            <li>Able to work independently and as part of team</li>
+            <li>Good logical thinking and problem solving skills</li>
+            <li>Attention to details</li>
+            <li>Hardworking</li>
+            <li>Multi-tasking</li>
+            <li>Competitive</li> 
+            <li>Willing to learn</li>
+            <li>Adaptability</li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <h2>PORTFOLIO</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+          <!-- Portfolio 1 -->
+          <div class="col">
+            <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+                padding-bottom: 0; box-shadow: 0 5px 5px 5px rgba(63,69,81,0.4); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                  src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJLrd4Uy0&#x2F;zs1XvA-Zb1_9PV_e9lXQZA&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+              </div>
+              <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJLrd4Uy0&#x2F;zs1XvA-Zb1_9PV_e9lXQZA&#x2F;view?utm_content=DAGJLrd4Uy0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">ZesTea</a>  
+          </div>
+
+          <!-- Portfolio 2 -->
+          <div class="col">
+            <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+                padding-bottom: 0; box-shadow: 0 5px 5px 5px rgba(63,69,81,0.4); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJTaicalo&#x2F;-l4xNDBIZOuntvPrhCyOXg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                  </iframe>
+                </div>
+                <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJTaicalo&#x2F;-l4xNDBIZOuntvPrhCyOXg&#x2F;view?utm_content=DAGJTaicalo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">CoffeeBen</a>  
+          </div>
+
+          <!-- Portfolio 3 -->
+          <div class="col">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+                padding-bottom: 0; box-shadow: 0 5px 5px 5px rgba(63,69,81,0.4); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                  src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJT8uIjB0&#x2F;A_tjs-aLsG72m-7zbZnVjQ&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+              </div>
+              <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJT8uIjB0&#x2F;A_tjs-aLsG72m-7zbZnVjQ&#x2F;view?utm_content=DAGJT8uIjB0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">BukoJuan</a>  
+          </div>
+  
+          <!-- Portfolio 4 -->
+          <div class="col">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                padding-bottom: 0; box-shadow: 0 5px 5px 5px rgba(63,69,81,0.4); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                  src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJm05Wlxg&#x2F;eUMDnxwMhxNdSOyWsQac5g&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+              </div>
+              <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJm05Wlxg&#x2F;eUMDnxwMhxNdSOyWsQac5g&#x2F;view?utm_content=DAGJm05Wlxg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Portfolio - Social Media Manager</a>  
+          </div>
+
+          <!-- Portfolio 5 -->
+          <div class="col">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+                padding-bottom: 0; box-shadow: 0 5px 5px 5px rgba(63,69,81,0.4); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                  src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJqR71Ai0&#x2F;1fGa4htSThzkFim-3meESA&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+              </div>
+              <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGJqR71Ai0&#x2F;1fGa4htSThzkFim-3meESA&#x2F;view?utm_content=DAGJqR71Ai0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Website Portfolio - Social Media Manager</a>  
+          </div>
+
+          <!-- Portfolio 6 -->
+          <div class="col">
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+            padding-bottom: 0; box-shadow: 0 5px 5px 5px rgba(63,69,81,0.4); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+            border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+              src="https://jbtugano.github.io/Capstone-Project-1/" allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+          </div>
+          <a href="https://jbtugano.github.io/Capstone-Project-1/" target="_blank" rel="noopener">Capstone Project 1 - Resume - HTML</a>  
+        </div>
+
+        <!-- For Future Portfolios -->
+
+        <!-- <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- CONTACTS -->
+  <footer id="contacts">
+    <div class="container">
+      <footer class="py-5 mt-0 mb-0">
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <h3>My Contacts</h3>
+        </div>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-5">
+          <li class="nav-item"><a href="https://m.me/jbtugano7" class="nav-link px-2 text-body-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg> &nbsp; +639754550818</a></li>
+          <li class="nav-item"><a href="mailto:jbztugano@gmail.com" class="nav-link px-2 text-body-primary"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+          </svg> &nbsp; jbztugano@gmail.com</a></li>
+        </ul>
+
+        <ul class="nav justify-content-center pb-3 mb-2 fs-4">
+          <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-primary text-uppercase">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-primary text-uppercase">About</a></li>
+        </ul>
+
+        <!-- Facebook Link -->
+        <ul class="nav justify-content-center pb-3 mt-3 mb-0">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/jbtugano7" class="nav-link px-2 text-body-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg></a>
+          </li>
+          <!-- Twitter Link -->
+          <li class="nav-item"><a href="https://www.x.com/JB_Tugano" class="nav-link px-2 text-body-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+            </svg></a>
+          </li>
+          <!-- YouTube Link -->
+          <li class="nav-item"><a href="https://www.youtube.com/JBTuganoMusic" class="nav-link px-2 text-body-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+            </svg></a>
+          </li>
+          <!-- Instagram Link -->
+          <li class="nav-item"><a href="https://www.instagram.com/jb_tugano" class="nav-link px-2 text-body-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+          </a>
+        </li>
+        <!-- TikTok Link -->
+          <li class="nav-item"><a href="https://www.tiktok.com/@jb_tugano" class="nav-link px-2 text-body-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+            </svg>
+          </a></li>
+        </ul>
+        <p class="text-center text-body-primary">© 2024, John Benedict Z. Tugano</p>
+      </footer>
+    </div>
+  </footer>
+
+
+    <script>
+        // Function to close offcanvas
+        function closeOffcanvas() {
+          var offcanvasElement = document.getElementById('offcanvasNavbar2');
+          var offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement); // Get the Bootstrap offcanvas instance
+          offcanvas.hide();
+        }
+      
+        // Add event listener to all nav links except dropdown-toggle
+        document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle)').forEach(function(navLink) {
+          navLink.addEventListener('click', closeOffcanvas);
+        });
+      
+        // Add event listener to all dropdown items
+        document.querySelectorAll('.dropdown-item').forEach(function(dropdownItem) {
+          dropdownItem.addEventListener('click', closeOffcanvas);
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

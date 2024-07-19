@@ -1,0 +1,533 @@
+/* Fixing white space at the right hand side whenever the width decreases below 400px */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /*or just use this only - depends*/
+}
+
+/* SIDEBAR */
+@media (max-width: 991px) {
+    #offcanvasNavbar2 {
+        background-color: rgba(97, 97, 97, 0.15) !important;
+        backdrop-filter: blur(12px) !important;
+    }
+
+    .dropdown-menu.show {
+        background-color: transparent !important;
+      }
+
+      .title-page {
+        height: 100vh;
+    }
+}
+
+ul > li.nav-item.dropdown > ul > li > a {
+    color: black !important;
+    transition: background-color 0.15s;
+  }
+ul > li.nav-item.dropdown > ul > li > a:hover {
+    background-color: #81663f !important;
+    color: white !important;
+    opacity: 0.6;
+  }
+ul > li.nav-item.dropdown > ul > li > a:active {
+    background-color: #4e381a !important;
+    color: white !important;
+  }
+
+@media (max-width: 991px) {
+    ul > li.nav-item.dropdown > ul > li > a {
+        color: white !important;
+        background-color: transparent;
+        transition: background-color 0.15s;
+        }
+    ul > li.nav-item.dropdown > ul > li > a:hover {
+        background-color: #fff1dd !important;
+        color: black !important;
+        opacity: 0.6;
+        }
+    ul > li.nav-item.dropdown > ul > li > a:active {
+        background-color: #d4c9b9 !important;
+        color: black !important;
+        }
+}
+
+/* #offcanvasNavbar2 > div.offcanvas-body.fs-5 > ul > li.nav-item.dropdown > ul */
+
+
+
+/* SECTION 1*/
+/* NOTE: Mas useful ang ID kapag sa one-page website */
+
+#home {
+    /* background-image: url('./Cover Photo.png'); */
+    background: #000 url('./assets/Cover Photo.png') 0 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 75% 90%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.title-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 85vh;
+}
+
+body > nav > div > a {
+    font-weight: 500;
+    font-family: 'montserrat', Verdana, sans-serif;
+    font-style: oblique;
+}
+
+.text-area {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: whitesmoke;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+    .title-page {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 400px) {
+    h1, p {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #home > div > div > div > a > svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .title-page {
+        height: 110vh;
+    }
+    
+}
+
+@media (max-width: 250px) {
+    #home > div > div > div > a > svg {
+        display: none;
+    }
+
+    .title-page {
+        height: 85vh;
+    }
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    opacity: 1;
+
+    animation: fade-in 3s;
+}
+
+
+p {
+    font-size: larger;
+    color: white;
+
+    animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+li:nth-child(1) > a {
+    color: white;
+}
+li:nth-child(2) > a {
+    color: white;
+}
+li:nth-child(3) > a {
+    color: white;
+}
+li:nth-child(4) > a {
+    color: white;
+}
+li:nth-child(5) > a {
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+a svg {
+    fill: whitesmoke; /* Set the fill to use the current text color */
+    transition: fill 0.15s;
+}
+
+a:hover svg {
+    fill: #cccccc; /* Set the color you want on hover */
+}
+
+@media (max-width: 700px) {
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+    p {
+        font-size: large;
+    }
+}
+
+
+/* SECTION 2 */
+#about {
+    background-image: linear-gradient(to left, rgb(202, 177, 143) , white);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+#about p {
+    color: black;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.carousel-inner {
+    box-shadow:3px 3px 12px;
+  }
+
+.dropdown-item {
+    color: black !important;
+}
+
+
+/* SECTION 3 */
+#education {
+    background-color: #695335;
+    background-image: linear-gradient(to bottom, #695335, rgb(202, 177, 143) , white);
+    padding: 100px 0px;
+}
+
+#education .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#education .container h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-indicators {
+    width: 75%;
+    margin-left: 14%;
+    position: static;
+    margin-bottom: 40px;
+}
+
+.experience-slide-one {
+    padding: 20px 50px 100px 50px;
+    background-color: rgb(202, 177, 143)
+}
+
+.experience-slide-img {
+    display: flex;
+    justify-content: end;
+
+}
+
+.carousel-indicators button {
+    text-indent: 0 !important;
+    background: 0 0;
+    border: none;
+    margin: 0 !important;
+    position: relative;
+    width: 35% !important;
+}
+
+.carousel-indicators button:before {
+    position: absolute;
+    content: "";
+    border-top: 1px solid #c8cbd0;
+    width: 100%;
+    left: 0;
+}
+
+.carousel-indicators button h4 {
+    margin-top: -41px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.carousel-indicators button i {
+    margin-top: -8px;
+    position: absolute;
+}
+
+.carousel-indicators button.active i {
+    color: black;
+}
+
+.carousel-indicators button.active h4 {
+    color: black;
+    font-size: 22px;
+    position: absolute;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.custom-img {
+    margin: 20px 0 20px 0;
+    box-shadow: 2px 2px 15px;
+    width: 80%;
+}
+
+@media (max-width: 770px) {
+    .experience-slide-img {
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    div.carousel-indicators > button:nth-child(1) > h4 {
+        font-size: medium;
+        font-weight: bold;
+    }
+    div.carousel-indicators > button:nth-child(2) > h4 {
+        font-size: medium;
+        font-weight: bold;
+    }
+    div.carousel-indicators > button:nth-child(3) > h4 {
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    #workExp > div.carousel-indicators > button > svg {
+        display: none;
+    }
+
+    #carouselEducation > div.carousel-indicators > button > svg {
+        display: none;
+    }
+
+    div.carousel-indicators > button.active {
+        background-color: black;
+    }
+
+    #about > div > div > div > p {
+        font-size: large;
+    }
+}
+
+@media (min-width: 991px) {
+    #carouselEducation > div.carousel-inner > div > div > div.col-md-7 > div > ul > li {
+        font-size: larger;
+    }
+
+}
+
+
+
+
+/* SECTION 4 */
+#workExperiences {
+    background-color: #695335;
+    background-image: linear-gradient(to top, #695335, rgb(202, 177, 143) , white);
+    padding: 100px 0px;
+}
+
+#workExperiences .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#workExperiences .container h2 {
+    color: black;
+    font-size: 2rem;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (min-width: 991px) {
+    #workExp > div.carousel-inner > div > div > div.col-md-7 > div > ul > li {
+        font-size: larger;
+    }
+
+}
+
+
+/* SECTION 5 */
+#extraCurriculars {
+    background-image: linear-gradient(to left, rgb(202, 177, 143) , white);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+
+/* SECTION 6 */
+#skills {
+    background-image: linear-gradient(to right, rgb(63,55,49) , rgb(197, 179, 155), rgb(63, 55, 49));
+    background-size: 180% 180%;
+    animation: skills-animation 10s ease infinite;
+}
+
+@keyframes skills-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    #skills {
+        background-image: linear-gradient(to bottom, rgb(63, 55, 49) , rgb(197, 179, 155), rgb(63, 55, 49));
+    }
+
+    @keyframes skills-animation {
+        0% {
+            background-position: 50% 0%;
+        }
+        50% {
+            background-position: 50% 100%;
+        }
+        100% {
+            background-position: 50% 0%;
+        }
+    }
+}
+
+#skills > div > div > div:nth-child(1) > h1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    font-style: normal;
+    color: white;
+}
+
+#skills > div > div > div:nth-child(2) > h1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    font-style: normal;
+    color: white;
+}
+
+@keyframes animate {
+    0%, 100% {
+        text-shadow: 0 0 30px black;
+    }
+    50% {
+        text-shadow: 0 0 30px #695335;
+    }
+}
+
+
+/* SECTION 7 */
+#portfolio > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image: linear-gradient(to right, rgb(202, 177, 143) , white);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+#portfolio > div > div > div > div > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #423420;
+    transition: color 0.15s;
+}
+
+#portfolio > div > div > div > div > a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #745f40;
+}
+
+#portfolio > div > div > div > div > a:active {
+    text-decoration: none;
+    font-weight: bold;
+    color: #918169;
+}
+
+
+/* SECTION 8 */
+#contacts {
+    background-image: linear-gradient(to bottom, rgb(63, 55, 49) , rgb(83, 83, 83));
+    color: whitesmoke;
+}
+
+#contacts > div > footer > ul.nav.justify-content-center.border-bottom.pb-3.mb-5 > li > a {
+    color: whitesmoke;
+}
+
+#contacts > div > footer > ul.nav.justify-content-center.border-bottom.pb-3.mb-5 > li > a:hover {
+    color: rgb(194, 190, 158);
+}
+
+#contacts > div > footer > ul.nav.justify-content-center.border-bottom.pb-3.mb-5 > li > a:active {
+    color: rgb(255, 250, 209);
+}
+
+#contacts > div > footer > ul.nav.justify-content-center.pb-3.mb-2.fs-4 > li > a {
+    color: whitesmoke;
+}
+
+#contacts > div > footer > ul.nav.justify-content-center.pb-3.mb-2.fs-4 > li > a:hover {
+    color: rgb(194, 190, 158);
+}
+
+#contacts > div > footer > ul.nav.justify-content-center.pb-3.mb-2.fs-4 > li > a:active {
+    color: rgb(255, 250, 209);
+}
